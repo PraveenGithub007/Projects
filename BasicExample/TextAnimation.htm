@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    body{
+        background-color: antiquewhite;
+        padding: 0px;
+        margin: 0px;
+    }
+    h1{
+        background-color: red;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 2   px;
+        margin: 0px;
+        padding: 0px; 
+        color:transparent;
+    }
+    h1::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #000;
+        overflow: hidden;
+        border-right: 1px solid #000;
+        animation: type 10s steps(30) infinite;
+        white-space: normal;
+    }
+    @keyframes type{
+        0%{width:0}
+        50%{width:100%}
+        100%{width:0}
+    }
+    </style>
+</head>
+<body>
+    <h1 data-text="Pure Css Text Typing Animation">Pure Css Text Typing Animation</h1>
+</body>
+</html>

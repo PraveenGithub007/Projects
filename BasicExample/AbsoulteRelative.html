@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" style="width: 100%">
+
+        <tr>
+            <td>Absoulte</td>
+            <td>Relactive</td>
+        </tr>
+        <tr>
+            <td>
+                <b>Continer Inside Container</b>
+                <div style="width: 400px;height: 100px;background: yellow;position: relative;">
+                    <div style="position: absolute;top: 10px;left: 30px;background: red">
+                        position: absolute;top: 10px;left: 30px;background: red
+                    </div>
+                </div>
+            </td>
+            <td>
+                <b>Continer Inside Container</b>
+                <div style="width: 400px;height: 100px;background: yellow">
+                    <div style="position: relative;top: 10px;left: 30px;background: red">
+                        position: relative;top: 10px;left: 30px;background: red
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <b>Example of Relative and absolute - Here Father is relative and son in absolute</b>
+                <style>
+                    #father1 {
+                        position: relative;
+                        height: 100px;
+                        widows: 70%;
+                        background: yellow;
+                    }
+
+                    #son1 {
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    #son2 {
+                        position: absolute;
+                        bottom: 0;
+                    }
+                </style>
+                <div id="father1">
+                    <div id="son1">Son1</div>
+                    <div id="son2">Son2</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <b>Example of Relative and absolute - Here Father is absolute and son in absolute</b>
+                <style>
+                    #father2 {
+                        position: absolute;
+                        height: 100px;
+                        widows: 70%;
+                        background: yellow;
+                    }
+
+                    #son11 {
+                        position: absolute;
+                        top: 0;
+                    }
+
+                    #son22 {
+                        position: absolute;
+                        bottom: 0;
+                    }
+                </style>
+                <div id="father2">
+                    <div id="son11">Son1</div>
+                    <div id="son22">Son2</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <b>Example of Relative and absolute - Here Father is relative and son in relative</b>
+                <style>
+                    #father3 {
+                        position: relative;
+                        height: 100px;
+                        widows: 70%;
+                        background: yellow;
+                    }
+
+                    #son111 {
+                        position: relative;
+                        /* top: 0; */
+                    }
+
+                    #son222 {
+                        position: relative;
+                        /* bottom: 0; */
+                    }
+                </style>
+                <div id="father3">
+                    <div id="son111">Son1</div>
+                    <div id="son222">Son2</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

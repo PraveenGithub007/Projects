@@ -1,0 +1,1018 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Myvestige</title>
+
+
+  <!-- <link rel="stylesheet" href="../BootstrapFiles/bootstrap.min.css"></script>
+    <script type="text/javascript" src="../BootstrapFiles/jquery-3.2.1.slim.min.js"></script> 
+    <script type="text/javascript" src="../BootstrapFiles/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../BootstrapFiles/popper.min.js"></script> -->
+
+  <!-- <link rel="stylesheet" href="../BootstrapFiles/bootstrap.min.css">
+    <script type="text/javascript" src="../BootstrapFiles/jquery.min.js"></script>
+    <script type="text/javascript" src="../BootstrapFiles/bootstrap.min.js"></script>  -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <link rel="stylesheet" href="../BootstrapFiles/bootstrap.min.css"></script> 
+    <script type="text/javascript" src="../BootstrapFiles/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../BootstrapFiles/bootstrap.bundle.min.js"></script> -->
+
+
+  <!-- <link rel="stylesheet" href="../BootstrapFiles/css/bootstrap.min.css"/>
+  <script type="text/javascript" src="../BootstrapFiles/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../BootstrapFiles/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+    </script> -->
+
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"/> 
+    <script type="text/javascript"  src="../node_modules/bootstrap/dist/js/bootstrap.js"/> -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Oswald', sans-serif !important;
+      line-height: 1.42857143;
+    }
+
+    .navbar-inverse {
+      /* background-color: #222;
+      border-color: #080808; */
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    .navbar-nav li a {
+      text-transform: uppercase;
+    }
+
+    .flgCss {
+      border-radius: 20px;
+    }
+
+    .loginCss {
+      background-color: transparent;
+      transition-delay: 300ms;
+      transition-duration: 300ms;
+      /* transition-property: background; */
+      transition-timing-function: linear;
+      /* transform-origin: 0rem; */
+      transition-timing-function: linear;
+    }
+
+    .loginCss:hover {
+      /* transform: translateX(1.2); */
+      background-color: gray;
+    }
+
+    .socialLinks {
+      display: block;
+    }
+
+    .container {
+      padding-right: 2px;
+      padding-left: 2px;
+      /* margin-right: auto;
+          margin-left: auto; */
+    }
+
+    #containerImg {
+      position: relative;
+      width: 100%;
+      /* height: 400px; */
+      height: 100vh;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    #containerImg img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+    }
+
+    @-webkit-keyframes imgFade {
+      0% {
+        opacity: 1;
+      }
+      17% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+      }
+      92% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes imgFade {
+      0% {
+        opacity: 1;
+      }
+      17% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+      }
+      92% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes imgFade {
+      0% {
+        opacity: 1;
+      }
+      17% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+      }
+      92% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes imgFade {
+      0% {
+        opacity: 1;
+      }
+      17% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+      }
+      92% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #containerImg img {
+      -webkit-animation-name: imgFade;
+      -webkit-animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration: 8s;
+
+      -moz-animation-name: imgFade;
+      -moz-animation-timing-function: ease-in-out;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-duration: 8s;
+
+      -o-animation-name: imgFade;
+      -o-animation-timing-function: ease-in-out;
+      -o-animation-iteration-count: infinite;
+      -o-animation-duration: 8s;
+
+      animation-name: imgFade;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 8s;
+    }
+
+    #containerImg img:nth-of-type(1) {
+      -webkit-animation-delay: 6s;
+      -moz-animation-delay: 6s;
+      -o-animation-delay: 6s;
+      animation-delay: 6s;
+    }
+
+    #containerImg img:nth-of-type(2) {
+      -webkit-animation-delay: 4s;
+      -moz-animation-delay: 4s;
+      -o-animation-delay: 4s;
+      animation-delay: 4s;
+    }
+
+    #containerImg img:nth-of-type(3) {
+      -webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
+      -o-animation-delay: 2s;
+      animation-delay: 2s;
+    }
+
+    #containerImg img:nth-of-type(4) {
+      -webkit-animation-delay: 0;
+      -moz-animation-delay: 0;
+      -o-animation-delay: 0;
+      animation-delay: 0;
+    }
+
+    .liCss {
+      /* background: red;
+        list-style: none; */
+      list-style-type: none;
+    }
+
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+
+    .facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .google {
+      background: #dd4b39;
+      color: white;
+    }
+
+    .linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .youtube {
+      background: #bb0000;
+      color: white;
+    }
+
+    .formfield {
+      /* padding: 10px; */
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .txtBox,
+    textarea {
+      height: 40px;
+      background: #fff;
+      font-size: 14px;
+      width: 100%;
+      border: none;
+      padding: 0 10px;
+    }
+
+    .formfield textarea {
+      height: 120px;
+    }
+
+    .reachout {
+      background-color: edf7ff;
+      border: 5px solid #f3f3f3;
+      border-width: 5px 0px 5px 0px;
+    }
+
+    .rowColRemovePadding {
+      padding-left: 0px;
+      padding-right: 0px;
+      /* margin: 5px; */
+    }
+
+    .prodSec {
+      padding: 0 2px 0 2px;
+      margin: 4px 0 0 0;
+    }
+
+    .prodImg {
+      text-align: center;
+      /* background: #D5D5D5; */
+      /* min-width: 300px;
+                    min-height: 135px; */
+      /* width: 70%;
+                    height: 50%; */
+      color: #fff;
+    }
+
+    .prodImg img {
+      width: 100%;
+      /* height: 55%; */
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      /* margin: 10px; */
+      /* margin: 5px 5px 5px 0px; */
+    }
+
+    .prodImg:hover img {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    .prodDesc {
+      position: absolute;
+      bottom: 15px;
+      /* left: 15px; */
+      left: 30px;
+      width: calc(100% - 100px);
+      color: #fff;
+      /* border: 2px solid red; */
+    }
+
+    .prodSec .goBtn {
+      position: absolute;
+      /* bottom: 20px; */
+      bottom: 25px;
+      right: 20px;
+      color: #fff;
+      /* border: 2px solid red; */
+      font-size: 40px;
+    }
+
+    .prodDesc h2 {
+      text-transform: uppercase;
+      font-size: 2.0rem;
+    }
+
+    .prodDesc p {
+      font-size: 1.5rem;
+    }
+
+    .brandsimg {
+      padding: 20px 0px 50px 0px;
+    }
+
+    .brandsimgWrap {
+      display: block;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, .08);
+      box-shadow: 0 0 5px #fff;
+      margin: 0 10px 5px;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      /* filter: url(data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…52 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter); */
+      /* -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); */
+    }
+
+    .brandsimgWrap img {
+      width: 100%;
+      max-width: 100%;
+      transition: all .5s ease-in-out;
+      transform: scale(1.00);
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    .brandsimgWrap img:hover {
+      /* display: block;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, .08);
+      box-shadow: 0 0 5px #fff;
+      margin: 0 10px 5px;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;  */
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      transform: scale(1.01);
+    }
+
+    .aboutus {
+      /* background-image: url(images/aboutus.jpg); */
+      background-image: url(images/aboutbg.jpg);
+      background-size: cover;
+    }
+
+    .aboutus h2 {
+      text-transform: uppercase;
+      text-align: center;
+      padding-left: 20px;
+      color: white;
+    }
+
+    div p.idsasection {
+      color: 72b43d;
+      font-size: 1.8rem;
+      /* display: inline-block; */
+      /* border: 1px solid green; */
+      text-transform: uppercase;
+    }
+
+    p.idsasection .idsalink {
+      /* display: inline-block;
+      vertical-align: middle;
+      width: 80px;
+      height: 80px;
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid #72b43d;
+      position: relative;
+      margin-right: 10px; */
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      position: relative;
+      background: #fff;
+      border-radius: 50%;
+      /* border: 1px solid green; */
+      vertical-align: middle;
+    }
+
+    p.idsasection .idsalink img {
+      /* width: 62%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%); */
+      width: 62%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      position: absolute;
+    }
+
+    .aboutus h3 {
+      /* text-transform: uppercase; */
+      margin: 100x 0 0 20px;
+    }
+
+    .videoSection {
+      padding: 20px 50px 0 0;
+    }
+
+    .videoSection h2 {
+      padding-left: 15px;
+      font-size: 2rem;
+    }
+
+    .rowMarginTop10px {
+      margin-top: 10px;
+    }
+
+    .rowMarginTopBottom10px {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .btnViewMore {
+      /* background: linear-gradient(to right, red 50%, blue 50%); */
+      background: linear-gradient(to right, #20bc6d 50%, transparent 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 200ms ease-in;
+      color: green;
+      border-radius: 0px;
+
+    }
+
+    .btnViewMore:hover {
+      background-position: left bottom;
+      color: white;
+    }
+
+    .reachoutSection {
+      color: black;
+      font-size: 15px;
+      list-style: none;
+    }
+
+    .reachoutSection ul li {
+      list-style: none;
+    }
+
+    .reachoutSection ul li h3 {
+      color: black;
+      /* font-size: 15px; */
+      font-size: 1.6rem;
+      color: #000;
+    }
+
+    .reachoutSection ul li a {
+      text-decoration: none;
+      color: #4f4c4d;
+    }
+
+    .reachoutSection ul li a:hover {
+      text-decoration: none;
+      color: #4f4c4d;
+    }
+
+    .reachoutSection p {
+      font-family: 'FuturaStd', sans-serif;
+      font-weight: 400;
+      color: #4f4c4d;
+    }
+  </style>
+  <script>
+    var prevScrollPos = window.pageYOffset;
+
+    window.onscroll = function () {
+
+      var currScrollPos = window.pageYOffset;
+
+      if (currScrollPos > 100) {
+        document.getElementById("navbar").style.background = "white";
+      }
+      else {
+        document.getElementById("navbar").style.background = "transparent";
+      }
+      // if(prevScrollPos > currScrollPos)
+      // {
+      //     if(currScrollPos  <= 0)
+      //     { 
+      //         document.getElementById("navbar").style.background="Red";
+      //     }
+      //     else 
+      //         document.getElementById("navbar").style.background="transparent";
+      // }
+      // else
+      // {
+      //     document.getElementById("navbar").style.top="-100px";
+      // }
+      prevScrollPos = currScrollPos;
+    }
+  </script>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Company
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Page 1-1</a>
+              </li>
+              <li>
+                <a href="#">Page 1-2</a>
+              </li>
+              <li>
+                <a href="#">Page 1-3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Brands</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li>
+            <a href="#">Gallary</a>
+          </li>
+          <li>
+            <a href="#">Schedule</a>
+          </li>
+          <li>
+            <a href="#">Branches</a>
+          </li>
+          <li>
+            <a href="#">Donwloads</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="Images/india.jpg" alt="India" class="flgCss" />
+            </a>
+          </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li><button type="button">Login</button></li> -->
+          <li>
+            <a href="#">
+              <button type="button" class="loginCss">Login</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="icon-bar">
+    <a href="#" class="facebook">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <a href="#" class="twitter">
+      <i class="fa fa-twitter"></i>
+    </a>
+    <a href="#" class="google">
+      <i class="fa fa-google"></i>
+    </a>
+    <a href="#" class="linkedin">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="#" class="youtube">
+      <i class="fa fa-youtube"></i>
+    </a>
+  </div>
+
+  <div class="container-fluid">
+    <div id="containerImg" class="row">
+      <!-- <img src="http://imaging.nikon.com/lineup/dslr/df/img/sample/img_01.jpg">
+      <img src="http://imaging.nikon.com/lineup/dslr/df/img/sample/img_02.jpg">
+      <img src="http://imaging.nikon.com/lineup/dslr/df/img/sample/img_03.jpg">
+      <img src="http://imaging.nikon.com/lineup/dslr/df/img/sample/img_04.jpg"> -->
+      <img src="Images/Veslimbanner2.jpg">
+      <img src="Images/webivr-banner.jpg">
+      <img src="Images/banner03mar18.jpg">
+      <img src="Images/mca-guidelines.jpg">
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 rowColRemovePadding">
+        <a href="#" class="prodSec">
+          <div class="prodImg">
+            <img class="lazy-loaded responisve" data-src="Images/001.jpg" alt="#" src="Images/001.jpg">
+          </div>
+          <div class="prodDesc">
+            <h2 class="title">monthly schemes</h2>
+            <p>Click here to know the latest monthly schemes and special offers.</p>
+          </div>
+          <span class="goBtn">
+            <!-- <i class="icon-arrow"></i> -->
+            <i class="glyphicon glyphicon-circle-arrow-right"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 rowColRemovePadding">
+        <a href="#" class="prodSec">
+          <div class="prodImg">
+            <img class="lazy-loaded responisve" data-src="Images/002.jpg" alt="#" src="Images/002.jpg">
+          </div>
+          <div class="prodDesc">
+            <h2>what's new</h2>
+            <p>Keep yourself updated with all the latest happenings in Vestige.</p>
+          </div>
+          <span class="goBtn">
+            <!-- <i class="icon-arrow"></i> -->
+            <i class="glyphicon glyphicon-circle-arrow-right"></i>
+          </span>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 rowColRemovePadding">
+        <a href="#" class="prodSec">
+          <div class="prodImg">
+            <img class="lazy-loaded responisve" data-src="Images/003.jpg" alt="#" src="Images/003.jpg">
+          </div>
+          <div class="prodDesc">
+            <h2>Car Achievers</h2>
+            <p>Meet the Vestige Dream Achievers who have purchased their dream cars.</p>
+          </div>
+          <span class="goBtn">
+            <!-- <i class="icon-arrow2"></i> -->
+            <i class="glyphicon glyphicon-circle-arrow-right"></i>
+          </span>
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 rowColRemovePadding">
+        <a href="#" class="prodSec">
+          <div class="prodImg">
+            <img class="lazy-loaded responisve" data-src="Images/004.jpg" alt="#" src="Images/004.jpg">
+          </div>
+          <div class="prodDesc">
+            <h2>Vestige Leadership Series</h2>
+            <p>To those who know the way, Show the way and Go the way.</p>
+          </div>
+          <span class="goBtn">
+            <!-- <i class="icon-arrow2"></i> -->
+            <i class="glyphicon glyphicon-circle-arrow-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="row text-center">
+      <h2 class="text-center">OUR BRANDS</h2>
+    </div>
+    <div class="row brandsimg">
+      <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+        <a href="http://www.ayusante.com/" target="_blank" title="Ayusante" class="brandsimgWrap">
+          <img class="lazy-loaded" data-src="Images/ourbranks01.png" alt="ayusante" src="Images/ourbranks01.png">
+        </a>
+      </div>
+      <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+        <a href="http://www.ayusante.com/" target="_blank" title="Ayusante" class="brandsimgWrap">
+          <img class="lazy-loaded" data-src="Images/ourbranks02.png" alt="ayusante" src="Images/ourbranks02.png">
+        </a>
+      </div>
+      <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+        <a href="http://www.ayusante.com/" target="_blank" title="Ayusante" class="brandsimgWrap">
+          <img class="lazy-loaded" data-src="Images/ourbranks03.png" alt="ayusante" src="Images/ourbranks03.png">
+        </a>
+      </div>
+      <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+        <a href="http://www.ayusante.com/" target="_blank" title="Ayusante" class="brandsimgWrap">
+          <img class="lazy-loaded" data-src="Images/ourbranks04.png" alt="ayusante" src="Images/ourbranks04.png">
+        </a>
+      </div>
+      <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+        <a href="http://www.ayusante.com/" target="_blank" title="Ayusante" class="brandsimgWrap">
+          <img class="lazy-loaded" data-src="Images/ourbranks04.png" alt="ayusante" src="Images/ourbranks05.png">
+        </a>
+      </div>
+    </div>
+    <div class="row aboutus">
+      <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1" style="margin-top:100px">
+        <img src="Images/logo.png" alt="logo" />
+      </div>
+      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 text-center" style="color: white">
+        <h2 class="title">about vestige</h2>
+        <p>Vestige Marketing Pvt. Ltd., which started its operations in the year 2004, is a leading direct selling company dealing
+          in world class health and personal care products. Vestige is constantly growing at a phenomenal rate every year.
+          The growth rate in itself speaks volumes about the quality of the products, the marketing plan and the management
+          that has been able to deliver such a rewarding and sustainable system.</p>
+        <p>Vestige is constantly expanding its product range to introduce innovative products every year, manufactured at state-of-the-art
+          manufacturing facilities, which are GMP certified. Vestige is an ISO 9001-2015 certified company and believes in
+          offering world class service levels to all its customers. With over 2000+ online and offline sales outlets pan
+          India, one international office and several distributor centres, Vestige has built a widespread network of distributors,
+          which is constantly expanding every year.</p>
+        <p>Vestige believes in empowering its members with the opportunity to lead their lives on their own terms. With the
+          motto of spreading Wellth, i.e. spreading wealth through wellness, Vestige has continued to enrich the lives of
+          everyone who is a part of the company and those who believe in its products. </p>
+        <p class="idsasection text-center">
+          <a class="idsalink" href="http://www.idsa.co.in/" target="_blank" title="Indian Direct Selling Association">
+            <img src="Images/idsa-logo.jpg" alt="#">
+          </a> Vestige is a proud member of IDSA</p>
+        <h3>vision</h3>
+        <p>To help people live a life of economic independence on their own terms</p>
+        <h3>mission</h3>
+        <p>To grow to a global scale and become the benchmark in direct selling</p>
+
+      </div>
+    </div>
+    <div class="row videoSection">
+      <h2>OUR CORPORATE VIDEOS</h2>
+      <!-- YOUTUBE URLS -->
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yyjG8el5w9c?rel=0&amp;controls=0&amp;showinfo=0"
+          style="width: 100%;height: 300px;" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7M5yDcVv_Ls?rel=0&amp;controls=0&amp;showinfo=0"
+          style="width: 100%;height: 300px;" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_PyS7kuktos?rel=0&amp;controls=0&amp;showinfo=0"
+          style="width: 100%;height: 300px;" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="row rowMarginTopBottom10px text-center viewmore">
+      <button type="button" class="btn btn-default btnViewMore">VIEW MORE</button>
+    </div>
+    <div class="row reachout">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <h2>REACH OUT</h2>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="reachoutSection">
+          <ul>
+            <li>
+              <h3></h3>Our Corporate Office</h3>
+              <p>Vestige Marketing Pvt. Ltd.
+                <br>A-89,Okhla Industrial Area Phase II
+                <br>New Delhi 110020</p>
+            </li>
+            <li>
+              <h3>Phone:</h3>
+              <p>
+                <a href="tel:011-43101234">011-43101234</a>
+              </p>
+            </li>
+            <li>
+              <h3>All India Toll Free No. :</h3>
+              <p>
+                <a href="tel:18001023424">18001023424</a>
+              </p>
+            </li>
+            <li>
+              <h3>Whatsapp your queries on: </h3>
+              <p>
+                <a href="#">+91 9315955844</a>
+              </p>
+            </li>
+
+            <li>
+              <h3>Customer Care Numbers:</h3>
+              <p>Chennai:
+                <a href="tel:044-28252516">044-28252516</a>
+              </p>
+              <p>Bhubaneswar:
+                <a href="tel:0674-2573326">0674-2573326</a>
+              </p>
+              <p>Kolkata North:
+                <a href="tel:033-40016441"> 033-40016441</a>
+              </p>
+              <p>Kolkata South:
+                <a href="tel:033-40034921">033-40034921</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="reachEnqForm">
+          <h3>Write to us</h3>
+          <p>Please write to us using the contact form below if you would like to know more about the opportunity, share ideas,
+            give feedback, have complaints, or would simply like to request a catalogue</p>
+
+          <div>
+            <span class="formfield">
+              <input type="text" placeholder="Name" class="txtBox">
+            </span>
+            <span class="formfield">
+              <input type="text" placeholder="Address" class="txtBox">
+            </span>
+            <span class="formfield">
+              <input type="text" placeholder="Mobile" class="txtBox">
+            </span>
+            <span class="formfield">
+              <input type="text" placeholder="Email" class="txtBox">
+            </span>
+            <span class="formfield">
+              <textarea placeholder="Your Message"></textarea>
+            </span>
+            <span class="formfield">
+              <button type="submit">Submit</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <ul>
+          <li class="liCss">
+            <h3>For General Quaries</h3>
+            <p>
+              <a href="mailto:info@myvestige.com">info@myvestige.com</a>
+            </p>
+          </li>
+          <li class="liCss">
+            <h3>For Sales</h3>
+            <p>
+              <a href="mailto:sales@myvestige.com">info@myvestige.com</a>
+            </p>
+          </li>
+          <li class="liCss">
+            <h3>For Voice Quaries</h3>
+            <p>
+              <a href="mailto:sales@myvestige.com">info@myvestige.com</a>
+            </p>
+          </li>
+          <li class="liCss">
+            <h3>Our CSR initiative</h3>
+            <a href="http://www.vestigehearttoheart.com/" target="_blank" title="Vestige heart to heart">
+              <img class="lazy-loaded img-responsive" data-src="images/brand/06.png" alt="vestige heart to heart" src="Images/hearttoheart.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div style="height: 100px"/> -->
+    <footer>
+      <div class="container text-center">
+        <div class="copyright">
+          <h3>© 2015 Vestige Marketing Private Limited | All rights reserved </h3>
+          <span id="socialBox" class="socialLinks">
+            <a href="https://www.facebook.com/VestigeMkt/" target="_blank" title="Facebook">
+              <i class="allIcon fbIcon"></i>
+            </a>
+            <a href="https://twitter.com/vestigemkt" target="_blank" title="Twitter">
+              <i class="allIcon twitterIcon"></i>
+            </a>
+            <a href="https://www.instagram.com/vestige_official" target="_blank" title="Instagram">
+              <i class="allIcon instagramIcon"></i>
+            </a>
+            <a href="http://youtube.com/vestigemedia" target="_blank" title="Youtube">
+              <i class="allIcon youtubeIcon"></i>
+            </a>
+            <a href="https://in.pinterest.com/VestigeOfficial" target="_blank" title="Pinterest">
+              <i class="allIcon pinterestIcon"></i>
+            </a>
+
+          </span>
+        </div>
+        <style>
+          .navCss {
+            /* display:block; */
+            background: rebeccapurple;
+
+          }
+
+          .navCss li {
+            float: left;
+          }
+
+          .navCss li a {
+            /* display:block; */
+            /* background: red; */
+            display: block;
+            padding: 5px 6px 5px 6px;
+            text-decoration: none;
+
+          }
+
+          /* footer nav li:after { */
+
+          .navCss li:after {
+            content: 'ssss';
+            width: 10px;
+            height: 12px;
+            background: #5c5c5c;
+            right: 0;
+            top: 6px;
+            position: absolute;
+          }
+        </style>
+        <nav class="navCss">
+          <ul>
+            <li class="liCss">
+              <a href="../contact-us.aspx" title="Contact Us">Contact Us</a>
+            </li>
+            <li class="liCss">
+              <a href="../privacy-policy.aspx" title="Privacy &amp; Security Policy">Privacy &amp; Security Policy</a>
+            </li>
+            <li class="liCss">
+              <a href="../registration.aspx" title="Registration Process">Registration Process</a>
+            </li>
+            <li class="liCss">
+              <a href="../products.aspx" title="Product/Service Details">Product/Service Details</a>
+            </li>
+            <!-- <li><a href="../billing.aspx" title="Billing/Shipping Process">Billing/Shipping Process</a></li>-->
+            <li class="liCss">
+              <a href="../refund.aspx" title="Cancellation/Refund Process">Cancellation/Refund Process</a>
+            </li>
+            <li class="liCss">
+              <a href="../disclaimer.aspx" title="T&amp;C">T&amp;C </a>
+            </li>
+            <li class="liCss">
+              <a href="../branches.aspx" title="Branches">Branches</a>
+            </li>
+            <!--<li><a href="../bankdetails.aspx" title="Bank Deatils">Bank Deatils</a></li>-->
+            <li class="liCss">
+              <a href="../delivery-area.aspx" title="Delivery">Delivery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

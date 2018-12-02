@@ -1,0 +1,67 @@
+Selected Site
+
+http://property.sulekha.com/
+				On Scroll Down show Message as comming up
+
+		
+
+http://www.centuryrealestate.in/
+
+https://www.commonfloor.com/
+				Fore color black on image in mid of screen
+				Recently Added Properties
+				
+
+https://housing.com/in/buy/real-estate-bangalore
+				Featured Collections: SHowing Circel with number effect
+				Showing Lite background image(Z-index:-5)
+
+
+http://www.centuryrealestate.in/
+				Mouseover of Luxuary, Premimum and Plotted Developers 
+				Luxuary, Premimum and Plotted Developers has SubTitle on the Images
+				
+http://datatechies4u.com/privacy-policy/
+				Fixed Header at Top on Scroll down
+
+https://www.nakash.com/		
+				* Moving the Flight from left to right
+				* Making Use of CSS : transform: translate3d ( WHich will change the image Index) FLIGHT 
+				Will go bottom to up
+				* 
+https://www.voonik.com/online-store/zovi
+
+				* OnMOuse over of this , showing price,size (Moving bit top)
+======================================
+
+https://www.templatemonster.com/category/real-estate-wordpress-themes/
+				On MOuseover of image: SHow image as popup
+
+http://wrapbootstrap.com/preview/WB0106485
+
+http://wrapbootstrap.com/preview/WB0C06H5D
+
+http://wrapbootstrap.com/preview/WB0765RX7
+http://wrapbootstrap.com/preview/WB047G975
+
+http://wrapbootstrap.com/preview/WB0349G3F
+https://askbootstrap.com/preview/osahan-land/index1.html
+
+https://mobirise.com/bootstrap-template/real-estate-template/
+http://collinbray.com/
+http://cityhomecollective.com/
+http://makrealtygroup.com/
+https://www.rubyhome.com/
+
+https://www.livegulfshoreslocal.com/
+
+https://www.livegulfshoreslocal.com/
+
+https://ricardo-olea.kw.com/
+
+
+https://fitsmallbusiness.com/real-estate-agent-website-examples/
+
+
+
+

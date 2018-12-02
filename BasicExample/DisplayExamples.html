@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <Style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            height: 120px;
+            border: 1px solid green;
+        }
+
+        ul li a{
+            color: white;
+        }
+        .S1 li {
+            display: block;
+            background: blue;
+
+        }
+
+        .S2 li {
+            display: inline;
+            background: blue; 
+        }
+
+        .S3 li {
+            display: inline-block;
+            background: blue; 
+        }
+
+        .S4 li {
+            display: block;
+            background: blue; 
+        }
+
+        div.S11 span {
+            display: block;
+            height: 50px;
+            width: 100px;
+            border: 1px solid red;
+            color: green;
+        }
+
+        div.S22 span {
+            display: inline;
+            height: 50px;
+            width: 100px;
+            border: 1px solid red;
+            color: green;
+        }
+
+        div.S33 span {
+            display: inline-block;
+            height: 50px;
+            width: 100px;
+            border: 1px solid red;
+            color: green;
+        }
+
+        div.S44 span {
+            display: block;
+            height: 50px;
+            width: 100px;
+            border: 1px solid red;
+            color: green;
+        }
+    </Style>
+</head>
+
+<body>
+    <table style="width: 100%;border: 1px" border="1">
+        <tr>
+            <td>
+                <b>Display : Block</b>
+                <ul class="S1">
+                    <li>
+                        <a href="$">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 4</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Display : Inline</b>
+                <ul class="S2">
+                    <li>
+                        <a href="$">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 4</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Display : Inline-block</b>
+                <ul class="S3">
+                    <li>
+                        <a href="$">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 4</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Display : block</b>
+                <ul class="S4">
+                    <li>
+                        <a href="$">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="$">Link 4</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table style="width: 100%;border: 1px" border="1">
+        <tr>
+            <td style="width: 50%">
+                <b>Display : Block</b>
+                <div class="S11">Text Out of Span
+                    <span>Text Inside the Containter</span> Text outside of Span
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Display : Inline</b>
+                <div class="S22">Text Out of Span
+                    <span>Text Inside the Containter</span> Text outside of Span
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Display : Inline-block</b>
+                <div class="S33">Text Out of Span
+                    <span>Text Inside the Containter</span> Text outside of Span
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Display : Inline-block</b>
+                <div class="S44">Text Out of Span
+                    <span>Text Inside the Containter</span> Text outside of Span
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

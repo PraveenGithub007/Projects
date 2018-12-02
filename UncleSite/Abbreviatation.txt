@@ -1,0 +1,6 @@
+Type		Abb 		AbbNbr		
+
+Apartment	/FLat	AP		AP1
+Land		LD		LD1
+Villas		VL		VL1
+

@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* html{
+            box-sizing: border-box;
+            height: 100%; */
+            /* overflow: hidden; */
+        /* } */
+        /* *, *::before, *::after{
+            box-sizing: inherit;
+            padding: 0;
+            margin: 0;
+
+        } */
+        .containerCss{
+            display: flex;
+            justify-content: center;
+        }
+        .thumbnails
+        {
+            display: flex;
+            flex-direction: column;
+            line-height: 0;
+
+        }
+        .thumbnails li{
+            flex:auto;
+        }
+        .thumbnails a{
+            display: block;
+        }
+
+        .thumbnails img{
+            width: 30vmin;
+            height: 20vmin;
+            object-fit: cover;
+            object-position: top;
+            background-size: cover;
+            background-position: center;
+        }
+        .slides
+        {
+            overflow: hidden;
+            width: 75vmin;
+            height: 100vmin;
+            margin-top: -18px;
+        }
+        .slides li{
+            width: 75vmin;
+            height: 100vmin;
+            position: absolute;
+            z-index: 1;
+        }
+        .slides img{
+            height: 100vmin;
+            object-fit: cover;
+            object-position: top;
+        }
+        .slides li:target{ 
+            z-index: 3;
+           -webkit-animation: slide 1s 1;
+           transition: slide 1s 1;
+        }
+        .slides li:not(:target){ 
+           -webkit-animation: hidden 1s 1;
+           transition: hidden 1s 1;
+        }
+    li{
+        display:inline-block;
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="containerCss" style="background-color: red">
+        <ul class="slides"  style="background-color: yellow;padding: 0px 20px">
+            <li id="slide1"><img src="../Images/S1.jpg" alt="" /></li>
+            <li id="slide2"><img src="../Images/S2.jpg" alt="" /></li>
+            <li id="slide3"><img src="../Images/S3.jpg" alt="" /></li>
+            <li id="slide4"><img src="../Images/S4.jpg" alt="" /></li>
+            <li id="slide5"><img src="../Images/S5.jpg" alt="" /></li>
+        </ul>
+        <ul class="thumbnails"  style="background-color: blue;padding: 0px 20px">
+            <li><a href="#slide1"><img src="../Images/S11.jpg"  alt=""/></a></li>
+            <li><a href="#slide2"><img src="../Images/S22.jpg"  alt=""/></a></li>
+            <li><a href="#slide3"><img src="../Images/S33.jpg"  alt=""/></a></li>
+            <li><a href="#slide4"><img src="../Images/S44.jpg"  alt=""/></a></li>
+            <li><a href="#slide5"><img src="../Images/S55.jpg"  alt=""/></a></li>
+        </ul>
+    </div> -->
+
+    <style>
+    .containerNew
+    { 
+         display: flex; 
+    }
+    .slidesNew
+    { 
+        overflow: hidden;
+        display: -ms-inline-grid;
+        display: inline-grid; 
+        margin-top: -18px;
+         
+    }
+    .slidesNew li{ 
+        display: flex; 
+    }
+    .slidesNew img
+    { 
+
+    }
+    .thumbnailsNew{ 
+        display: -ms-inline-grid;
+        display: inline-grid; 
+        object-fit: cover;
+        object-position: top; 
+        background-size: cover;
+        background-position: center;
+    }
+    .thumbnailsNew li{ 
+        
+    }
+    .thumbnailsNew img{ 
+        /* width: 30vmin;
+        height: 20vmin;
+        object-fit: cover;
+        object-position: top;
+        background-size: cover;
+        background-position: center; */
+
+    }
+    </style>
+    <div class="containerNew" style="background-color: red">
+        <ul class="slidesNew"  style="background-color: yellow;padding: 0px 20px">
+            <li id="slideNew1"><img src="../Images/S11.jpg" alt="" /></li>
+            <li id="slideNew2"><img src="../Images/S22.jpg" alt="" /></li>
+            <li id="slideNew3"><img src="../Images/S33.jpg" alt="" /></li>
+            <li id="slideNew4"><img src="../Images/S44.jpg" alt="" /></li>
+            <li id="slideNew5"><img src="../Images/S55.jpg" alt="" /></li>
+        </ul>
+        <ul class="thumbnailsNew"  style="background-color: blue;padding: 0px 20px">
+            <li><a href="#slideNew1"><img src="../Images/S1.jpg"  alt=""/></a></li>
+            <li><a href="#slideNew2"><img src="../Images/S2.jpg"  alt=""/></a></li>
+            <li><a href="#slideNew3"><img src="../Images/S3.jpg"  alt=""/></a></li>
+            <li><a href="#slideNew4"><img src="../Images/S4.jpg"  alt=""/></a></li>
+            <li><a href="#slideNew5"><img src="../Images/S5.jpg"  alt=""/></a></li>
+        </ul>
+    </div>
+</body>
+</html>

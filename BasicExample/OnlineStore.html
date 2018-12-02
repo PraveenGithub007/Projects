@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+     
+ <style>
+   .h5{
+     padding: 8px;
+   }
+   /* .box 
+   {
+height: 80px;
+
+   } */
+   .bgColors{ 
+     /* background-color:linear-gradient(to bottom, #F5F5F5 0%, #C4C4C4 100%) fixed;   */
+     background: linear-gradient(to bottom, #F5F5F5 0% , #C4C4C4 100%);
+   }
+   .header{
+     border-top:3px solid pink;
+     background-color:linear-gradient(to bottom, #F5F5F5 0%, #C4C4C4 100%) fixed;
+     font-family: 'Tangerine', serif;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 900;
+     text-align: center;
+     margin-top: 70px;
+     color:#069;
+     text-shadow: rgba(0,0,0,0.4) 2px 2px 5px;
+     font-size: 35px;
+   }
+   .wrapper{
+     width: 100%;
+     display:flex;
+     -webkit-box-pack: center;
+     -webkit-box-orient: horizontal;
+   }
+   .fixedSize
+   {
+     width:200px;
+     height: 200px;
+     border-radius: 100px;
+     /* text-align: center; */
+   }
+   .text{
+     text-align: center;
+     color:#000;
+     font-size: 18px;
+   }
+   .boxFle{
+     width: 210px;
+     height: 210px;
+     margin-right: 7px;
+     border-radius: 100px;
+     border: 5px solid #FFF;
+     /* background-color: red; */
+     overflow: hidden;
+     box-shadow: rgba(0,0,0,0.5) 10px 10px 20px;
+   }
+   div.boxFle div{
+     width: 200px;
+     height: 210px;
+     background: #000;
+     text-align: center;
+     border-radius: 100px;
+     padding: 95px 0 0 0;
+     color: white;
+   }
+   div.effect1 div{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+     transition: opacity 700ms;
+     color: white;
+   }
+   div.effect1:hover div{
+    opacity: 0.8;
+   }
+   div.effect2 img{
+     position: absolute;
+     top: 0;
+     left: 0; 
+     transition: margin-left 800ms;
+     color: white;
+   }
+   div.effect2:hover img{
+     position: absolute;
+     /* top: 0;
+     left: 0; */
+    margin-left: 200px;
+   }
+   div.effect3 div{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0.8;
+     margin-left: -200px;
+     transition: margin-left 700ms;
+     color: white;
+   }
+   div.effect3:hover div{
+    margin-left: 0px;
+   }
+   div.effect4 div{
+     position:fixed;
+     top: 0;
+     left: 0;
+     opacity: 0.8;
+     transform: scale(0);
+     transition-duration: 500ms;
+     /* margin-left: -200px;
+     transition: margin-left 700ms; */
+     color: white;
+   }
+   div.effect4:hover div{
+    transform: scale(1);
+   }
+ </style>
+</head>
+<body>
+    <div class="container">
+      <div class="row bgColors">
+          <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+              <li class="tab"><a class="active" href="#test1">Top Sarees</a></li>
+              <li class="tab"><a  href="#test2">Top Dress</a></li>
+              <li class="tab"><a href="#test3">Top Bangles</a></li>
+              <li class="tab"><a href="#test4">Top Material</a></li>
+              <li class="tab disabled"><a href="#test0">Top Collection</a></li>
+            </ul>
+        <div id="header" class="header">This is Awsome Transition</div>
+        <div class="wrapper">  
+          <div class="boxFle effect1">
+              <img src="../Images/S9.jpg" alt="1st Image" class="fixedSize"/>
+              <div class="text">Amazing</div>
+          </div>
+          <div class="boxFle effect2">
+              <img src="../Images/S12.jpg" alt="1st Image" class="fixedSize"/>
+              <div class="text">Awsome</div>
+          </div>
+          <div class="boxFle effect3">
+              <img src="../Images/S13.jpg" alt="1st Image" class="fixedSize"/>
+              <div class="text">Effective</div>
+          </div>
+          <div class="boxFle effect4">
+              <img src="../Images/S14.jpg" alt="1st Image" class="fixedSize"/>
+              <div class="text">Attractive</div>
+          </div>
+        </div>
+      </div>
+    <div class="row" style="padding-top: 500px">            
+                  <div id="test1" class="col s12">                      
+                        <div class="col s12 m3">
+                                <div class="card">
+                                  <div class="card-image">
+                                    <img src="..\Images\b1.jpg" alt=""  class="resonsive-img materialboxed"/>
+                                    <span class="card-title" >Card Title</span>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                  </div>
+                                  <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                  </div>
+                                </div>
+                              </div> <div class="col s12 m3">
+                                    <div class="card">
+                                      <div class="card-image">
+                                        <img src="..\Images\b2.jpg" alt=""  class="resonsive-img materialboxed"/>
+                                        <span class="card-title">Card Title</span>
+                                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                      </div>
+                                      <div class="card-content">
+                                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                      </div>
+                                    </div>
+                                  </div> <div class="col s12 m3">
+                                        <div class="card">
+                                          <div class="card-image">
+                                            <img src="..\Images\b3.jpg" alt=""  class="resonsive-img materialboxed"/>
+                                            <span class="card-title">Card Title</span>
+                                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                          </div>
+                                          <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                          </div>
+                                        </div>
+                                      </div> <div class="col s12 m3">
+                                            <div class="card">
+                                              <div class="card-image">
+                                                <img src="..\Images\b4.jpg" alt=""  class="resonsive-img materialboxed"/>
+                                                <span class="card-title">Card Title</span>
+                                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                              </div>
+                                              <div class="card-content">
+                                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                  </div>
+                  <div id="test2" class="col s12"><p>Test 2</p></div>
+                  <div id="test3" class="col s12"><p>Test 3</p></div>
+                  <div id="test4" class="col s12"><p>Test 4</p></div>
+                  <div id="test0" class="col s12"><p>Test 5</p></div>
+                
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ 
+ <script >
+   $(document).ready(function(){
+     $('.sidenav').sidenav();
+     $('.materialboxed'). materialbox();
+     $('.parallax'). parallax();
+     $('.tabs'). tabs();
+ 
+   })
+ </script>
+</body>
+</html>

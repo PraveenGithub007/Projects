@@ -1,0 +1,491 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        html {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .containerCss {
+
+            background: #273547;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            padding: 10px 100px;
+            box-sizing: border-box;
+            transition: .5s;
+            /* display: flex; */
+            display: inline-block;
+            background: #273547;
+        }
+
+        nav div span.logoH1 {
+            font-family: Algerian;
+            /* font-size: 32px; */
+            color: white;
+            font-size: 5.5vm;
+            font-size: 5.5vmin;
+            /*IE BROWSER*/
+        }
+
+
+        nav div span.logoH2 {
+            color: white;
+            font-size: 2.5vm;
+            font-size: 2.5vmin;
+            /*IE BROWSER*/
+        }
+
+
+        nav div.logo {
+            float: left;
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav div.logo img {
+            /* height: 60px; */
+            transition: .5s;
+        }
+
+        nav ul {
+            float: right;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            transition: .5s;
+        }
+
+        nav ul li {
+            list-style: none;
+            font-weight: bold;
+        }
+
+        nav ul li a {
+            line-height: 50px;
+            /* color: #262626; */
+            color: #fff;
+            padding: 2px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: .5s;
+            font-size: 2.2vm;
+            font-size: 2.2vmin;
+            /*IE BROWSER*/
+        }
+
+        nav ul li a.active {
+
+            /* color: #fff; */
+            color: #000;
+            background: lightgray;
+
+        }
+
+        nav ul li a:hover {
+            /* color: #fff; */
+            color: #000;
+            background: lightgray;
+
+        }
+
+        section.sect1 {
+            width: 100%;
+            height: 100vh;
+            background: url(Images/PJ1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            animation: backgrounds 15000ms infinite;
+        }
+
+        @keyframes backgrounds {
+            0% {
+                background: url(Images/PJ1.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            25% {
+                background: url(Images/PJ2.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            75% {
+                background: url(Images/PJ3.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            100% {
+                background: url(Images/PJ4.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+            }
+        }
+
+        section.sect2 {
+            width: 100%;
+            height: 100vh;
+            background: url(Images/PJ2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+
+        section.sect3 {
+            width: 100%;
+            height: 100vh;
+            background: url(Images/PJ3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            ;
+            background-position: center;
+        }
+
+        section.content {
+            padding: 100px;
+        }
+
+
+        /*Scroll DOWN Styles*/
+
+        nav.black {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            height: 60px;
+            padding: 5px 10px;
+            transition: 0.5s;
+        }
+
+        nav.black .logo img {
+            height: 30px;
+        }
+
+        nav.black ul li a {
+            color: #fff;
+            line-height: 60px;
+            transition: 1000ms;
+
+        }
+
+        /*parallax CODE*/
+
+        .parallax {
+            /* The image used */
+            background-image: url('Images/PJ1.jpg');
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .stylenone li {
+            list-style-type: none;
+        }
+
+        .liststylenone {
+            /* background: red;  */
+            list-style-type: none;
+        }
+
+        .liststylenone li {
+            /* background: yellow;  */
+            list-style-type: none;
+            display: block;
+            float: left;
+            padding: 5px;
+        }
+
+
+        .footerCss {
+            background: #273547;
+            color: #8c8b8b;
+            /* position: absolute; */
+        }
+
+        .footerCss div {
+            /* background: red; */
+            /* color: #8c8b8b;*/
+            /* position: absolute;  */
+        }
+
+        .footerCopyRights {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid rgba(250, 250, 250, .2);
+            border-bottom: 1px solid rgba(250, 250, 250, .2);
+        }
+    </style>
+    <script>
+        /*var prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function(){
+
+            var currScrollPos = window.pageYOffset;
+
+            if(prevScrollPos > currScrollPos)
+            {
+                document.getElementById("#navbar").style.top="0";
+            }
+            else
+            {
+                document.getElementById("#navbar").style.top="-100px";
+            }
+            prevScrollPos = currScrollPos
+        }*/
+        // $(window).on('scroll', function () {
+        //     if ($(window).scrollTop()) {
+        //         $('nav').addClass('black');
+        //     }
+        //     else {
+        //         $('nav').removeClass('black');
+        //     }
+        // })
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <img class="img-thumbnail" src="Images/GJ1.png" alt="Logo"    /> -->
+            <!-- <img class="img-responsive" src="Images/GJ1.png" alt="Logo" /> -->
+            <span class="logoH1">
+                Goutham Jain
+                <span class="logoH2">Real Estate</span>
+            </span>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Project</a>
+            </li>
+            <li>
+                <a href="#">Team</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="btn btn-primary" style="margin-top: 5px;margin-left: 5px">+91 99450 03857</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="sect1">
+
+    </section>
+
+    <div class="contasiner"    >
+        <div class="row" >
+            <div class="card col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center marginbottomby5px" >
+                <a href="#">
+                    <img class="card-img-top img-responsive" src="Images/Special1.jpg" alt="Card image cap" />
+                </a>
+                <a href="#" class="btn btn-primary specialLink pulse-btn">Premium Apartments
+                </a>
+            </div>
+            <div class="card col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center marginbottomby5px">
+                <a href="#">
+                    <img class="card-img-top img-responsive" src="Images/Special2.jpg" alt="Card image cap" />
+                </a>
+                <a href="#" class="btn specialLink">Luxary Apartments
+                </a>
+            </div>
+            <div class="card col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center marginbottomby5px">
+                <a href="#">
+                    <img class="card-img-top img-responsive" src="Images/Special3.jpg" alt="Card image cap" />
+                </a>
+                <a href="#" class="btn specialLink">Plotted Developments
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <section class="content">
+        <p>
+            Goutha Jain is a serial entrepreneur who founded multiple businesses, author, and international speaker. Praveen Narra is
+            Founder & Chief Executive Officer of Indyzen Inc DBA AppDevelopment.com, Inc. In his 13 year tenure as CEO of
+            the company, Mr. Narra has successfully lead his team of engineers to complete more than 1200 projects in Web,
+            Mobile and other Software platforms. Praveen Narra has helped not only Small & Medium sized Businesses, but also
+            Startups as well as Fortune 500 companies. Praveen Narra has also worked very closely with world renowned business
+            leaders such as Tony Robbins. As an International Speaker, Praveen Narra has shared stage with Steve Forbes,
+            Marc Faber and other billionaires. Mr. Narra strongly believes in collaborative win-win relationships, as well
+            as cross-pollination of technologies, skills and connections.
+            <br/> Goutha Jain is a serial entrepreneur who founded multiple businesses, author, and international speaker. Praveen
+            Narra is Founder & Chief Executive Officer of Indyzen Inc DBA AppDevelopment.com, Inc. In his 13 year tenure
+            as CEO of the company, Mr. Narra has successfully lead his team of engineers to complete more than 1200 projects
+            in Web, Mobile and other Software platforms. Goutha Jain has helped not only Small & Medium sized Businesses,
+            but also Startups as well as Fortune 500 companies. Praveen Narra has also worked very closely with world renowned
+            business leaders such as Tony Robbins. As an International Speaker, Praveen Narra has shared stage with Steve
+            Forbes, Marc Faber and
+        </p>
+    </section>
+    <section class="sect2">
+
+    </section>
+    <section class="content">
+        <p>
+            Goutha Jain is a serial entrepreneur who founded multiple businesses, author, and international speaker. Praveen Narra is
+            Founder & Chief Executive Officer of Indyzen Inc DBA AppDevelopment.com, Inc. In his 13 year tenure as CEO of
+            the company, Mr. Narra has successfully lead his team of engineers to complete more than 1200 projects in Web,
+            Mobile and other Software platforms. Praveen Narra has helped not only Small & Medium sized Businesses, but also
+            Startups as well as Fortune 500 companies. Praveen Narra has also worked very closely with world renowned business
+            leaders such as Tony Robbins. As an International Speaker, Praveen Narra has shared stage with Steve Forbes,
+            Marc Faber and other billionaires. Mr. Narra strongly believes in collaborative win-win relationships, as well
+            as cross-pollination of technologies, skills and connections.
+            <br/> Goutha Jain is a serial entrepreneur who founded multiple businesses, author, and international speaker. Praveen
+            Narra is Founder & Chief Executive Officer of Indyzen Inc DBA AppDevelopment.com, Inc. In his 13 year tenure
+            as CEO of the company, Mr. Narra has successfully lead his team of engineers to complete more than 1200 projects
+            in Web, Mobile and other Software platforms. Goutha Jain has helped not only Small & Medium sized Businesses,
+            but also Startups as well as Fortune 500 companies. Praveen Narra has also worked very closely with world renowned
+            business leaders such as Tony Robbins. As an International Speaker, Praveen Narra has shared stage with Steve
+            Forbes, Marc Faber and
+        </p>
+    </section>
+    <section class="sect3">
+
+    </section>
+    <section class="content">
+        <p>
+            Goutha Jain is a serial entrepreneur who founded multiple businesses, author, and international speaker. Praveen Narra is
+            Founder & Chief Executive Officer of Indyzen Inc DBA AppDevelopment.com, Inc. In his 13 year tenure as CEO of
+            the company, Mr. Narra has successfully lead his team of engineers to complete more than 1200 projects in Web,
+            Mobile and other Software platforms. Praveen Narra has helped not only Small & Medium sized Businesses, but also
+            Startups as well as Fortune 500 companies. Praveen Narra has also worked very closely with world renowned business
+            leaders such as Tony Robbins. As an International Speaker, Praveen Narra has shared stage with Steve Forbes,
+            Marc Faber and other billionaires. Mr. Narra strongly believes in collaborative win-win relationships, as well
+            as cross-pollination of technologies, skills and connections.
+            <br/> Goutha Jain is a serial entrepreneur who founded multiple businesses, author, and international speaker. Praveen
+            Narra is Founder & Chief Executive Officer of Indyzen Inc DBA AppDevelopment.com, Inc. In his 13 year tenure
+            as CEO of the company, Mr. Narra has successfully lead his team of engineers to complete more than 1200 projects
+            in Web, Mobile and other Software platforms. Goutha Jain has helped not only Small & Medium sized Businesses,
+            but also Startups as well as Fortune 500 companies. Praveen Narra has also worked very closely with world renowned
+            business leaders such as Tony Robbins. As an International Speaker, Praveen Narra has shared stage with Steve
+            Forbes, Marc Faber and
+        </p>
+    </section> -->
+
+    <div class="container containerCss">
+        <!-- footer Description -->
+        <div class="row footerCss footerDescription">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <img src="Images/GJ1.png" class="img-responsive">
+                <!-- <h3 style="font-family: Forte;color: white;font-size: 36px">Goutham Jain</h3> -->
+                <p>
+                    Century Real Estate, with its headquarters in Bangalore, India was founded by Dr. P. Dayananda Pai in the year 2010 with
+                    the primary objective of transacting in the simple buying and selling of land. More than 8 years of experience
+                    in real estate .....
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2>Get in touch with us</h2>
+                <div class="footerButtons">
+                    <input class="btn btn-primary" type="button" value="Villas">
+                    <input class="btn btn-primary" type="button" value="Apartments">
+                    <input class="btn btn-primary" type="button" value="Plots">
+                </div>
+                <div class="footerButtons">
+                    <input class="btn btn-primary" type="button" value="Luxury Houses">
+                    <input class="btn btn-primary" type="button" value="Commerical">
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h2>Get in touch with us</h2>
+                <ul class="stylenone">
+                    <li>
+                        <h3>Address</h3>
+                        <p>H.No:30, KSR Layout Hongaran 2nd Main, DC Halli Bangalore - 560076
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Mobile</h3>
+                        <p>+91 99 4500 3857</p>
+                    </li>
+                    <li>
+                        <h3>Mail</h3>
+                        <p>
+                            <a href="mailto:nampallypravee@gmail.com">nampallypravee@gmail.com</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer CopyRights -->
+        <div class="row footerCss footerCopyRights">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                Copyright © 2018 by
+                <a href="/" target="_blank">Century Real Estate Holdings Pvt. Ltd.</a>
+                <br>
+                <span>All rights reserved.
+                    <a href="/company/privacy-policy" target="_blank">Disclaimer</a> |
+                    <a href="/company/terms-and-conditions" target="_blank">Terms and Conditions</a>
+                </span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                <ul class="liststylenone">
+                    <li>
+                        <a href="//www.centuryrealestate.in/blog" target="_blank" class="fa fa-rss"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/centuryrealestatebangalore" target="_blank" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/centuryblr" target="_blank" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/century-real-estate-holdings-pvt-ltd" target="_blank" class="fa fa-linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+CenturyRealEstateHoldingsPvtLtd" target="_blank" class="fa fa-google-plus"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCPawCzN488cEaW-N_eH4LlQ" target="_blank" class="fa fa-youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/centuryrealestate" target="_blank" class="fa fa-instagram"></a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

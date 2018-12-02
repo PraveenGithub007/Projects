@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Lobster', cursive;
+            /* display: grid; */
+        }
+
+        .main {
+            /* position: absolute; */
+            width: 50%;
+            height: 60vh;
+            background: url('../Images/F1.jpg');
+            background-position: 100% 100%;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .main h2 {
+            position: relative;
+            padding: 0;
+            color: #fff;
+            font-size: 3rem;
+            text-shadow: 0px 3px 0 rgba(0, 0, 0, 0.6);
+            /* bottom: 10px; */
+            /* margin: 200px 0 0 350px; */
+            /* margin: 150px 0 0 100px; */
+        }
+
+        .main span:before {
+            content: '';
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: wordchange infinite 5s;
+        }
+
+        @keyframes wordchange {
+            0% {
+                content: 'Desktop Application'
+            }
+            20% {
+                content: 'Web Application'
+            }
+            40% {
+                content: 'Mobile Application'
+            }
+            60% {
+                content: 'Workpress Application'
+            }
+            80% {
+                content: 'Content Management System'
+            }
+            100% {
+                content: '.Net and Java Application'
+            }
+        }
+
+        .subMain {
+            position: relative;
+            width: 310px;
+            height: 310px;
+            border: 9px solid rebeccapurple;
+        }
+
+        .containerImg {
+            /* position: relative; */
+            /* width: 100%;
+      height: 400px; */
+        }
+
+        .containerImg img {
+            position: absolute;
+            /* width: 100%;
+            height: 100%; */
+            /* left: 0; */
+            -webkit-animation-name: imgFade;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 8s;
+
+            -moz-animation-name: imgFade;
+            -moz-animation-timing-function: ease-in-out;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-duration: 8s;
+
+            -o-animation-name: imgFade;
+            -o-animation-timing-function: ease-in-out;
+            -o-animation-iteration-count: infinite;
+            -o-animation-duration: 8s;
+
+            animation-name: imgFade;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 8s;
+        }
+
+
+
+        .containerImg img:nth-of-type(1) {
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            -o-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+
+        .containerImg img:nth-of-type(2) {
+            -webkit-animation-delay: 4s;
+            -moz-animation-delay: 4s;
+            -o-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+
+        .containerImg img:nth-of-type(3) {
+            -webkit-animation-delay: 2s;
+            -moz-animation-delay: 2s;
+            -o-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+
+        .containerImg img:nth-of-type(4) {
+            -webkit-animation-delay: 0;
+            -moz-animation-delay: 0;
+            -o-animation-delay: 0;
+            animation-delay: 0;
+        }
+
+
+        @-webkit-keyframes imgFade {
+            0% {
+                opacity: 1;
+            }
+            17% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+            92% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes imgFade {
+            0% {
+                opacity: 1;
+            }
+            17% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+            92% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes imgFade {
+            0% {
+                opacity: 1;
+            }
+            17% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+            92% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes imgFade {
+            0% {
+                opacity: 1;
+            }
+            17% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+            92% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>I am
+            <span></span>
+        </h2>
+    </div>
+
+    <div class="subMain containerImg">
+        <img src="../Images/F1.jpg" style="width: 300px;height: 300px;">
+        <img src="../Images/F2.jpg" style="width: 300px;height: 300px;">
+        <img src="../Images/F4.jpg" style="width: 300px;height: 300px;">
+        <img src="../Images/F2.jpg" style="width: 300px;height: 300px;">
+    </div>
+</body>
+
+</html>

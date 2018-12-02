@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+ <style> 
+ *{
+     padding: 0px;
+     margin: 0px;
+ }
+ body{ background: #f6f6f6;
+     background: linear-gradient(to bottom, #F5F5F5 0% , #C4C4C4 100%);
+     border-top:3px solid pink;
+
+ } 
+   #wrapper{
+     width: 100%;
+     /* display:-webkit-box; */
+     display:inline-flex;
+     -webkit-box-pack: center;
+     -webkit-box-orient: horizontal;
+     margin-top: 60px;
+   } 
+   #header{ 
+     font-family: 'Tangerine', serif;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 900;
+     text-align: center;
+     margin-top: 70px;
+     color:#069;
+     text-shadow: rgba(0,0,0,0.4) 2px 2px 5px;
+     font-size: 35px;
+   }
+   .text{
+     text-align: center;
+     color:#000;
+     font-size: 18px;
+   }
+   .box{ 
+       /* position: absolute; */
+       height: 200px;
+       width: 200px;
+     margin-right: 7px;
+     border-radius: 100px;
+     border: 5px solid #FFF; 
+     overflow: hidden;
+     box-shadow: rgba(0,0,0,0.5) 10px 10px 20px;
+   }
+   img
+   {
+     border-radius: 100px;
+
+   }div.box div{     
+       width: 200px;
+    height: 105px;
+     background: #000;
+     text-align: center;
+     border-radius: 100px;
+     padding: 95px 0 0 0;
+     color: white;
+   }
+   div.effect1 div{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0;
+     transition: opacity 700ms;
+     color: white;
+   }
+   div.effect1:hover div{
+     position: absolute; 
+    opacity: 0.8;
+   }
+   /* div.effect2 img{
+     position: absolute;
+     top: 0;
+     left: 0; 
+     transition: margin-left 800ms;
+     color: white;
+   }
+   div.effect2:hover img{
+     position: absolute; 
+    margin-left: 200px;
+   } */
+   div.effect3 div{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0.8;
+     margin-left: -200px;
+     transition: margin-left 700ms;
+     color: white;
+   }
+   div.effect3:hover div{
+     position: absolute;
+    margin-left: 0px;
+   }
+   div.effect4 div{
+     position:absolute;
+     top: 0;
+     left: 0;
+     opacity: 0.8;
+     transform: scale(0);
+     transition-duration: 500ms; 
+     color: white;
+   }
+   div.effect4:hover div{
+     position:absolute;
+    transform: scale(1);
+   }
+   div.effect5 div{
+     position:absolute;
+     top: 0;
+     left: 0;
+     opacity: 0.8;
+     transform: scale(0);
+     transition-duration: 500ms;
+     /* margin-left: -200px;
+     transition: margin-left 700ms; */
+     color: white;
+   }
+   div.effect5:hover div{
+     position:absolute;
+    transform: scale(1);
+   }
+   div.effect6 div{
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0.8;
+     transform: scale(0);
+     transition-duration: 500ms; 
+     color: white;
+   }
+   div.effect6:hover div{
+     /* position:fixed; */
+    transform: scale(1);
+   }
+   
+ </style>
+</head>
+<body> 
+    <div style="background-color: silver" >
+        <div id="header" class="header">This is Awsome Transition</div>
+        <div id="wrapper" class="wrapper">  
+          <div class="box effect1">
+              <img src="../Images/S9.jpg" alt="1st Image" height="200px" width="200px"   />
+              <div class="text">Amazing</div>
+          </div>
+          <div class="box effect2">
+              <img src="../Images/S12.jpg" alt="1st Image"  height="200px" width="200px" />
+              <div class="text">Awsome</div>
+          </div>
+          <div class="box effect3">
+              <img src="../Images/S13.jpg" alt="1st Image"  height="200px" width="200px" />
+              <div class="text">Effective</div>
+          </div>
+          <div class="box effect4">
+              <img src="../Images/S14.jpg" alt="1st Image"  height="200px" width="200px" />
+              <div class="text">Attractive</div>
+          </div>
+          <div class="box effect5">
+              <img src="../Images/S15.jpg" alt="1st Image"  height="200px" width="200px" />
+              <div class="text">Attractive</div>
+          </div>
+          <div class="box effect6">
+              <img src="../Images/S7.jpg" alt="1st Image"  height="200px" width="200px" />
+              <div class="text">Attractive</div>
+          </div>
+        </div> 
+    </div>
+</div> 
+ <script >
+   $(document).ready(function(){ 
+ 
+   })
+ </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+html
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+.container
+{
+    /* background: lightgray; */
+
+}
+.row
+{
+    /* background: lightskyblue; */
+} 
+
+.aboutme
+{ 
+    width: 100%; 
+    background: #F6F6F6;
+}
+.aboutme img
+{ 
+    width: 220px;
+    height: 220px;
+    float: left;
+    /* -webkit-shape-outside: circle(); */
+    /* shape-outside: circle(); */
+    border-radius: 70%;
+    margin: 20px; 
+}
+
+.aboutme p
+{  
+    vertical-align: top; 
+    padding: 10px 15px 10px 0px;
+
+}

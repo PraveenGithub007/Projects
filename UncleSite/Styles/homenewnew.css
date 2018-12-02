@@ -1,0 +1,189 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 12px;
+} 
+
+div section.sect1{
+    /* width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center; */
+
+    width: 100px;
+    height: 100px;
+    -webkit-animation: fading 3s infinite;
+    animation: fading 3s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    font-family:siteFont;
+    background-image: url(../Images/PJ1.jpg);
+
+
+} 
+
+div section.sect2{ 
+
+    width: 100px;
+    height: 100px; 
+
+
+} 
+
+@keyframes fading {
+    0%   
+    { 
+        background-image: url(../Images/PJ1.jpg)
+    }
+    25% 
+    {
+        background-image: url(../Images/PJ2.jpg)
+    }
+    50% 
+    {
+        background-image: url(../Images/PJ3.jpg)
+    }
+    100% 
+    {
+        background-image: url(../Images/PJ4.jpg)
+    }
+
+} 
+
+@-webkit-keyframes fading 
+{
+    0%   
+    { 
+        background-image: url(../Images/PJ1.jpg)
+    }
+    25% 
+    {
+        background-image: url(../Images/PJ2.jpg)
+    }
+    50% 
+    {
+        background-image: url(../Images/PJ3.jpg)
+    }
+    100% 
+    {
+        background-image: url(../Images/PJ4.jpg)
+    }
+}
+
+
+
+
+
+/* So after Ilya Strelsyn's answer I went looking for a alternative. and came up with this:
+
+CSS */
+
+.background_1 {
+  width: 102%;
+  height: 102%;
+  animation: BG_one 500s infinite;
+  position: fixed;
+  top: 5%;
+  z-index: -2;
+}
+
+.background_2 {
+  width: 102%;
+  height: 102%;
+  animation: BG_two 500s infinite;
+  position: fixed;
+  top: 5%;
+  z-index: -2;
+}
+
+.background_3 {
+  width: 102%;
+  height: 102%;
+  animation: BG_three 500s infinite;
+  position: fixed;
+  top: 5%;
+  z-index: -2;
+}
+
+.background_4 {
+  width: 102%;
+  height: 102%;
+  animation: BG_four 500s infinite;
+  position: fixed;
+  top: 5%;
+  z-index: -2;
+}
+
+@keyframes BG_one {
+  0%, 100% {
+    opacity: 1
+  }
+  12% {
+    opacity: 0.5
+  }
+  37% {
+    opacity: 0
+  }
+  62% {
+    opacity: 0
+  }
+  87% {
+    opacity: 0.5
+  }
+}
+
+@keyframes BG_two {
+  0%, 100% {
+    opacity: 0.5
+  }
+  12% {
+    opacity: 1
+  }
+  37% {
+    opacity: 0.5
+  }
+  62% {
+    opacity: 0
+  }
+  87% {
+    opacity: 0
+  }
+}
+
+@keyframes BG_three {
+  0%, 100% {
+    opacity: 0
+  }
+  12% {
+    opacity: 0
+  }
+  37% {
+    opacity: 0.5
+  }
+  62% {
+    opacity: 1
+  }
+  87% {
+    opacity: 0.5
+  }
+}
+
+@keyframes BG_four {
+  0%, 100% {
+    opacity: 0
+  }
+  12% {
+    opacity: 0
+  }
+  37% {
+    opacity: 0.5
+  }
+  62% {
+    opacity: 1
+  }
+  87% {
+    opacity: 0.5
+  }
+}

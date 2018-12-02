@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+      
+ <style>
+ *{
+     /* background-color: red; */
+     padding: 5px;
+     margin: 0px;
+ }
+ body
+ {
+     /* background-color: yellow; */
+     padding: 0px;
+     margin: 0px;
+ } 
+ .panelContainer{
+     width: 375px;
+     height: 250px; 
+     background-color: #F6F6F6;
+     /* position: absolute; */
+     overflow: hidden;
+     float: left;
+ }
+  
+ .panelContainer img{
+     transition: transform 800ms linear;
+ }
+ .panelContainer img:hover{
+     transform: translate3d(0px, -260px, 0px);
+ }
+ 
+ .panelContainer1{ 
+     width: 375px;
+     height: 250px; 
+     background-color: #F6F6F6; 
+     overflow: hidden; 
+ }
+  
+ .panelContainer1 img{
+     /* transition: transform 800ms scale(1.2) linear; */
+     transition: all .2s ease-in-out;
+ }
+ .panelContainer1 img:hover{
+     /* transform: translate3d(0px, -260px, 0px); */
+     /* transform: translateY(-260px); */
+     /* transform: scale(0.9); */
+     transform: scale(1.1);
+ }
+
+.cnt
+{
+    position: relative;
+    padding: 0px;
+}
+.cnt .box 
+ {
+    width:100%;
+    height: 310px;
+     overflow: hidden;
+ }
+ .cnt .box .imgBox img
+ { 
+     /* transition: transform 400ms ease-in-out; */
+     transform: scale(1.0);
+     transition-duration: 200ms;
+ }
+ .cnt .box:hover .imgBox img
+ {
+    transform: scale(1.1);
+ }
+ .cnt .box .details
+ {
+     /* position: absolute; */
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    transition: 1s;
+    opacity: 0;
+ }
+ .cnt .box .details .content
+ {
+     /* position: absolute;  */
+     top:50%;
+     transform: translateY(-150%);
+     text-align: center;
+     padding: 10px;
+ }
+ </style>
+</head>
+<body> 
+    <div class="row">
+        <div class="col s6 m6 panelContainer">
+                <img src="../Images/F3.jpg" alt="1st Image"   />  
+        </div>  
+        <div class="col s6 m6 panelContainer1">
+                <img src="../Images/F3.jpg" alt="1st Image"   />  
+        </div>  
+     </div>
+     <div class="row cnt"   style="background-color: tan">
+        <div class="col s4 m4 box" style="background-color: green">
+            <div class="imgBox">
+                <img src="../Images/F1.jpg" alt="1st Image" style="width:400px;height: 310px;" /> 
+            </div>
+            <div class="details">
+                <div class="content">
+                    <h3>This is Example</h3>
+                    <p>
+                        In the 2010 Common Wealth Games, #India won 101 medals, including 38 gold. For the first time in the history of the Games, India won over 100 medals in total and stood in second position, after Australia. 
+                    </p>
+                </div>
+            </div>   
+        </div>
+        <div class="col s4 m4 box">
+                <div class="imgBox">
+                    <img src="../Images/F2.jpg" alt="1st Image" style="width:400px;height: 310px;" /> 
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h3>This is Example</h3>
+                        <p>
+                            In the 2010 Common Wealth Games, #India won 101 medals, including 38 gold. For the first time in the history of the Games, India won over 100 medals in total and stood in second position, after Australia. 
+                        </p>
+                    </div>
+                </div>     
+        </div>
+        <div class="col s4 m4 box">
+                <div class="imgBox">
+                    <img src="../Images/F4.jpg" alt="1st Image" style="width:400px;height: 310px;" /> 
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h3>This is Example</h3>
+                        <p>
+                            In the 2010 Common Wealth Games, #India won 101 medals, including 38 gold. For the first time in the history of the Games, India won over 100 medals in total and stood in second position, after Australia. 
+                        </p>
+                    </div>
+                </div>     
+        </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ 
+</body>
+</html>

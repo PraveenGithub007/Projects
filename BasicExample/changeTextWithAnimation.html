@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+    <title>Document</title>
+    <style> 
+    body{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding: 43vh;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 36px;
+        font-weight: 800;
+        overflow: hidden;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */        
+        animation: bg 5s linear infinite;
+
+    }
+    .dropping-effects
+    {
+        display: inline-block;
+        width: 180px;
+        text-align: left;
+        height: 36px;
+        vertical-align: -2px;
+    }
+
+    .dropping-effects > div{
+        font-size: 0;
+        opacity: 0;
+        margin-left: -30px;
+        position: absolute;
+        font-weight: 300;
+        box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5)
+    }
+
+    .dropping-effects > div:nth-child(1){
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        -webkit-animation: roll 5s linear infinite 1s;
+        -moz-animation: roll 5s linear infinite 1s;
+        -o-animation: roll 5s linear infinite 1s;
+        animation: roll 5s linear infinite 1s;
+    }
+    .dropping-effects > div:nth-child(2){ 
+        animation: roll 5s linear infinite 2s;
+    }
+    .dropping-effects > div:nth-child(3){ 
+        animation: roll 5s linear infinite 3s;
+    }
+    .dropping-effects > div:nth-child(4){ 
+        animation: roll 5s linear infinite 4s;
+    } 
+ @keyframes roll
+    {
+        0%{
+            font-size: 0px;
+            opacity: 0;
+            margin-left: -30px;
+            margin-top: 0px;
+            transform: rotate(-25deg);
+        }
+        3%{ 
+            opacity: 1;  
+            transform: rotate(0deg);
+        }
+        5%{ 
+            opacity: 1;  
+            font-size: inherit;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        20%{ 
+            font-size: inherit;
+            opacity: 1;  
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0deg);
+        }
+        27%{ 
+            font-size: 0px;
+            opacity: 0.5;  
+            margin-left: 20px;
+            margin-top: 100px;
+            transform: rotate(0deg);
+        }
+        100%{ 
+            font-size: 0px;
+            opacity: 0;  
+            margin-left: -30px;
+            margin-top: 1100px;
+            transform: rotate(15deg);
+        }
+    }
+    /* @keyframes roll
+    {
+        0%{
+            font-size: 0px;
+            opacity: 0;
+            margin-left: -30px;
+            margin-top: 0px;
+            transform: rotate(-25deg);
+        }
+        25%{ 
+            opacity: 1;  
+            font-size: inherit;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0deg);
+        }
+        35%{ 
+            font-size: inherit;
+            opacity: 1;  
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0deg);
+        }
+        50%{ 
+            font-size: 0px;
+            opacity: 0.5;  
+            margin-left: 20px;
+            margin-top: 100px;
+            transform: rotate(0deg);
+        }
+        100%{ 
+            font-size: 0px;
+            opacity: 0;  
+            margin-left: -30px;
+            margin-top: 1100px;
+            transform: rotate(15deg);
+        }
+    } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+    </div>
+    UX Designer for 
+    <div class="dropping-effects">
+        <div><b>1 Developers</b></div>
+        <div><b>2 Desginer</b></div>
+        <div><b>3 Coder</b></div>
+        <div><b>4 Everone !s</b></div> 
+    </div>
+</body>
+</html>

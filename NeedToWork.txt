@@ -1,0 +1,7 @@
+1 Restaurant Site
+2 Entertainment
+3 Educational
+4 eCommerce
+5 ImageSlider.html => Its a image slide with animation for next and previous images
+6 ImageSliderUpToDown.html => Slide the image from top to bottom
+7 PopupWithAnimation.html => Show Popup with animation from Top 

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<style type="text/css">
+     .brand-logo{
+         padding-left: 20px !important;
+     }
+     .zoomEffect
+     {
+         transform: scale(1.0);
+         transition-duration: 400ms; 
+     }
+     .zoomEffect:hover
+     {
+         transform: scale(1.1); 
+     }
+     .containerCss{
+            display: flex;
+            justify-content: center;
+        }
+        .thumbnails
+        {
+            display: flex;
+            flex-direction: column;
+            line-height: 0;
+
+        }
+        .thumbnails li{
+            flex:auto;
+        }
+        .thumbnails a{
+            display: block;
+        }
+
+        .thumbnails img{
+            width: 30vmin;
+            height: 20vmin;
+            object-fit: cover;
+            object-position: top;
+            background-size: cover;
+            background-position: center;
+        }
+        .slides
+        {
+            overflow: hidden;
+            width: 75vmin;
+            height: 100vmin;
+            margin-top: -18px;
+        }
+        .slides li{
+            width: 75vmin;
+            height: 100vmin;
+            position: absolute;
+            z-index: 1;
+        }
+        .slides img{
+            height: 100vmin;
+            object-fit: cover;
+            object-position: top;
+        }
+        .slides li:target{ 
+            z-index: 3;
+           -webkit-animation: slide 1s 1;
+           transition: slide 1s 1;
+        }
+        .slides li:not(:target){ 
+           -webkit-animation: hidden 1s 1;
+           transition: hidden 1s 1;
+        }
+</style>
+</head>
+<body>
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Shree Collection</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Ethical Wear</a></li>
+                <li><a href="badges.html">Lingerie</a></li>
+                <li><a href="collapsible.html">Sleep & Loungewear</a></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href="#test1">Sarees</a></li>
+                <li class="tab"><a href="#test2">Dress Material</a></li>
+                <li class="tab"><a href="#test4">Bags</a></li>
+                <li class="tab"><a href="#test4">New Arrival</a></li>
+                <li class="tab disabled"><a href="#test3">Foot Ware</a></li>
+                </ul>
+            </div>
+        </nav>
+            
+        <!-- <div href="#test1" class="Test">href="#test1"</div>
+        <div href="#test2" class="Test">href="#test2"</div>
+        <div href="#test3" class="Test">href="#test"</div> -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sarees</a></li>
+            <li><a href="badges.html">Dress Material</a></li>
+            <li><a href="collapsible.html">Bags</a></li>
+        </ul> 
+        <div class="container" style="background-color: red"> 
+            <div class="row"  style="background-color: aqua">
+                    <div class="card col s12 m4 l4">
+                        <div class="noeffect">
+                            <img  src="../Images/S1.jpg" style="width: 200px;height: 250px;" 
+                            class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                    <div class="card col s12 m4 l4">
+                        <div class="noeffect">
+                            <img  src="../Images/S2.jpg" style="width: 200px;height: 250px;" class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                    <div class="card col s12 m4 l4">
+                        <div class="noeffect">
+                            <img  src="../Images/S3.jpg" style="width: 200px;height: 250px;" class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">                
+                <div class="card col s12 m4 l4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img  src="../Images/S4.jpg" style="width: 200px;height: 250px;" class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                    <div class="card col s12 m4 l4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img  src="../Images/S5.jpg" style="width: 200px;height: 250px;" class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                    <div class="card col s12 m4 l4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img  src="../Images/S6.jpg" style="width: 200px;height: 250px;" 
+                            class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">                
+                <div class="card col s12 m4 l4">
+                        <div class="zoomEffect">
+                            <img  src="../Images/S7.jpg" style="width: 200px;height: 250px;" class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                    <div class="card col s12 m4 l4">
+                        <div class="box zoomEffect">
+                            <img  src="../Images/S8.jpg" style="width: 200px;height: 250px;" class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                    <div class="card col s12 m4 l4">
+                        <div class="box zoomEffect">
+                            <img  src="../Images/S9.jpg" style="width: 200px;height: 250px;" 
+                            class="resonsive-img materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="containerCss" style="background-color: red">
+                    <ul class="slides"  style="background-color: yellow">
+                        <li id="slide1"><img src="../Images/S1.jpg" alt="" /></li>
+                        <li id="slide2"><img src="../Images/S2.jpg" alt="" /></li>
+                        <li id="slide3"><img src="../Images/S3.jpg" alt="" /></li>
+                        <li id="slide4"><img src="../Images/S4.jpg" alt="" /></li>
+                        <li id="slide5"><img src="../Images/S5.jpg" alt="" /></li>
+                    </ul>
+                    <ul class="thumbnails"  style="background-color: blue">
+                        <li><a href="#slide1"><img src="../Images/S11.jpg"  alt=""/></a></li>
+                        <li><a href="#slide2"><img src="../Images/S22.jpg"  alt=""/></a></li>
+                        <li><a href="#slide3"><img src="../Images/S33.jpg"  alt=""/></a></li>
+                        <li><a href="#slide4"><img src="../Images/S44.jpg"  alt=""/></a></li>
+                        <li><a href="#slide5"><img src="../Images/S55.jpg"  alt=""/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="test1" class="col s12">Test 1</div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">Test 3</div>
+        <div id="test4" class="col s12">Test 4</div>
+        
+    <!-- <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+     
+        <script >
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.materialboxed'). materialbox();
+                $('.parallax'). parallax();
+                $('.tabs'). tabs();            
+            })
+        </script>
+</body>
+</html>

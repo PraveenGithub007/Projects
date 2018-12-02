@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Change Image on Hover in CSS</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<style type="text/css">
+    .card {
+        width: 250px;
+        height: 350px;
+        /* background: url("../Images/S1.jpg") no-repeat; */
+        display: inline-block;
+        transform:scale(1.0);
+        transition-duration: 200ms;
+    }
+    .card:hover {
+        background: url("../Images/S1.jpg") no-repeat;
+        
+        transform:scale(1.2);
+        transition-duration: 400ms;
+    }
+</style>
+</head>
+<body>
+    
+    <div class="card">
+        <img src="../Images/S1.jpg" alt="1st Image"  class="resonsive-img materialboxed"  />  
+    </div>
+    <div class="card1">
+        <img src="../Images/S1.jpg" alt="1st Image"  class="resonsive-img materialboxed"  />  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ 
+ <script >
+   $(document).ready(function(){ 
+     $('.materialboxed'). materialbox(); 
+ 
+   })
+   </script>
+</body>
+</html>

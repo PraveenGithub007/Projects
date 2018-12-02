@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tble {}
+    </style>
+</head>
+
+<body>
+    <table width="100%" border="1" cellspacing="5" cellpadding="5" style="border:1px solid green">
+        <tr>
+            <td style="width: 35%">Short Cut</td>
+            <td style="width: 65%"> Value</td>
+        </tr>
+        <tr>
+            <td>ul.someClass</td>
+            <td>
+                <ul class="someClass"></ul>
+            </td>
+        </tr>
+        <tr>
+            <td>ul>li.className</td>
+            <td>
+                <ul>
+                    <li class="className"></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>ul>li.className*3</td>
+            <td>
+                <ul>
+                    <li class="className"></li>
+                    <li class="className"></li>
+                    <li class="className"></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td> p>lorem</td>
+            <td>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus a aliquam praesentium libero, molestiae
+                    quibusdam iste quisquam suscipit. Deserunt suscipit quis voluptatum ipsa earum voluptatem odit dignissimos
+                    nihil sit repellat.</P>
+            </td>
+        </tr>
+        <tr>
+            <td> p>lorem*2 => Will Generate Lorem text with two spans</td>
+            <td>
+                <p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas modi, omnis nostrum impedit minima
+                        quis repellendus pariatur? Architecto, expedita atque corporis quae rerum tempora deserunt non nihil
+                        voluptatibus consequuntur ullam?</span>
+                    <span>Beatae corrupti in similique est inventore ex deserunt dignissimos dolor culpa, aliquid nostrum! Rerum
+                        inventore blanditiis quas fugiat cum facilis ratione voluptas, doloremque ab eveniet quis veritatis
+                        laudantium deserunt adipisci?</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>tabe>tr>td*4</b> : Will Generate Table with 4 TDs</td>
+            <td>
+                <tabe>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tabe>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>tabe>tr.rowCls>td.colClass*4</b> : Will Generate Table with 4 TDs with classes</td>
+            <td>
+                <tabe>
+                    <tr class="rowCls">
+                        <td class="colClass"></td>
+                        <td class="colClass"></td>
+                        <td class="colClass"></td>
+                        <td class="colClass"></td>
+                    </tr>
+                </tabe>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>div>(header>ul>li*3)a)+footer>h1</b>: COLON(:) is used for sibilings</td>
+            <td>
+                <div>
+                    <header>
+                        <ul>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </header>
+                    <footer>
+                        <h1></h1>
+                    </footer>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b></b>: 
+            </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>
+                <b></b>: 
+            </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>
+                <b></b>: 
+            </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>
+                <b></b>: 
+            </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>
+                <b></b>: 
+            </td>
+            <td> </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

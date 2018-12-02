@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    html{
+        padding: 0;
+        margin: 0;
+        /* background-color: red; */
+    }
+    body{
+        /* background-color: yellow; */
+
+    }
+    section
+    {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    section.sec1{
+        /* background-color: 000; */
+        background-image: url(../Images/sunraise1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section.sec2{
+        /* background-color: fff; */
+    }
+    section.sec3{
+        /* background-color: 000; */
+        background-image: url(../Images/sunraise2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .skewed1
+    {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        /* width: 100%;
+        height: 60px;
+        background-color: gray; */
+        /* background-color: gray; */
+        border-width: 100px 0px 0px 1920px;
+        border-style: solid;
+        border-color: transparent transparent transparent fff;
+    }
+    .skewed2
+    {
+        position: absolute;
+        top:0;
+        left: 0;
+        /* width: 100%;
+        height: 60px;
+        background-color: gray; */
+        /* background-color: gray; */
+        border-width:  0px 0px 100px 1920px;
+        border-style: solid;
+        border-color: transparent transparent transparent fff;
+    }
+    </style>
+</head> 
+<body>
+    <section class="sec1">
+        <div class="skewed1"> 
+        </div>
+    </section>
+    <section class="sec2">
+        
+    </section>
+    <section class="sec3">
+        <div class="skewed2"> 
+        </div>        
+    </section>
+</body>
+</html>

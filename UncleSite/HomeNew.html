@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Styles/homenew.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Images/GJ1.png"  Alt="Goutham Jain" class="img-responsive" />
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> 
+
+    <div id="dvImage" class="home-bgChange">
+
+    </div>
+    <div id="test">
+sss1
+    </div>
+    
+    <div id="dvImage1" class="home-bgChange1">
+        I know <span id="span1" style="display: none">Dotnet</span>
+               <span id="span2" style="display: none">Java</span>
+               <span id="span3" style="display: none">CSharp</span>
+               <span id="span4" style="display: none">VB.NET</span>
+    </div>
+    ssssssss 1
+
+    <div >
+        ssssssss 1
+
+    </div> 
+    <script type="text/javascript">
+
+        var images = ["PJ1.jpg", "PJ2.jpg", "PJ3.jpg", "PJ4.jpg"];
+    
+        $(function () 
+        {    
+        $("#test").delay(1500).animate({text:'The text has now changed!'},500);
+            var i = 0;    
+            $("#dvImage").css("background-image", "url(images/" + images[i] + ")");    
+            setInterval(function () 
+            {    
+                i++;    
+                if (i == images.length) 
+                {    
+                    i = 0;    
+                }
+    
+                // $("#dvImage").fadeOut("slow", function () 
+                // {    
+                //     $(this).css("background-image", "url(images/" + images[i] + ")");    
+                //     $(this).fadeIn("slow");    
+                // });
+
+                // $("#dvImage").slideDown(1000, function () 
+                // {    
+                //     $(this).css("background-image", "url(images/" + images[i] + ")");    
+                //     $(this).slideUp(1000);    
+                // });
+
+                // $("#dvImage").fadeOut(1500, function () 
+                // {    
+                //     $(this).css("background-image", "url(images/" + images[i] + ")");    
+                //     $(this).fadeIn(700);    
+                // });
+
+                 $("#dvImage").animate.fadeOut("slow", function () 
+                {    
+                    $(this).animate.css("background-image", "url(images/" + images[i] + ")");    
+                    $(this).animate.fadeIn("slow");    
+                });
+
+                
+                var spns = ["span1", "span2", "span3", "span4"];
+
+                $("#dvImage").fadeOut(700, function () 
+                {    
+                    $(this).css("display", "url(images/" + images[i] + ")");    
+                    $(this).fadeIn(1000);    
+                });
+    
+            }, 1000);
+    
+        });
+    
+    </script>
+</body>
+</html>
